@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  NUM 1 <input type="text" id="num1"><br><br>
+  NUM 2<input type="text" id="num2"><br><br>
+  <h1>RESULT: <span id="res"></span></h1>
+   <br><br>
+   <button  onclick="add()">ADD</button><br><br>
+   <button  onclick="sub()">SUB</button><br><br>
+   <button  onclick="mul()">MUL</button><br><br>
+   <button onclick="clr()">clear</button>
+
+
+   
+
+    <script>
+        var a,b,res;
+
+        function add(){
+            a=parseInt(document.getElementById("num1").value);
+            b=parseInt(document.getElementById("num2").value);
+            res=a+b;
+            document.getElementById("res").innerHTML=res;
+         }
+
+         function sub(){
+            a=parseInt(document.getElementById("num1").value);
+            b=parseInt(document.getElementById("num2").value);
+            res=a-b;
+            document.getElementById("res").innerHTML=res;
+         }
+         function mul(){
+            a=parseInt(document.getElementById("num1").value);
+            b=parseInt(document.getElementById("num2").value);
+            res=a*b;
+            document.getElementById("res").innerHTML=res;
+         }
+         function clr(){
+            document.getElementById("num1").value="";
+            document.getElementById("num2").value="";
+            document.getElementById("res").innerHTML="";
+         }
+        
+        
+    </script>   
+</body> 
+</html>
